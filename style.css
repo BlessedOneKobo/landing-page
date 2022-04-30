@@ -105,10 +105,48 @@ header .nav-links a,
   background-color: var(--call-to-action-color);
 }
 
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 var(--page-padding) 7.5rem var(--page-padding);
+}
+
 .information h2 {
   font-size: 36px;
   font-weight: var(--extra-bold-weight);
   color: var(--dark-color);
+}
+
+.illustration-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.illustration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+}
+
+.illustration img {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border: 2px solid blue;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.illustration figcaption {
+  width: 80%;
+  color: #666;
 }
 
 .quote {
