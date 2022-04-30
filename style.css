@@ -5,7 +5,7 @@
   --grey-color: #e5e7eb;
   --off-white-color: #f9faf8;
   --light-weight: 300;
-  --page-padding: 1rem;
+  --page-padding: 10rem;
 }
 
 * {
@@ -19,6 +19,10 @@ body {
   margin: 0;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 header,
 .hero,
 footer {
@@ -27,7 +31,7 @@ footer {
 
 header {
   display: flex;
-  padding: var(--page-padding) 10rem;
+  padding: 1rem var(--page-padding);
 }
 
 header .logo-text {
@@ -46,10 +50,48 @@ header .nav-links a {
   text-decoration: none;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  padding: 5rem var(--page-padding);
+}
+
+.hero-text {
+  width: 40%;
+  padding-right: 1.5em;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  color: #fff;
+  width: 60%;
+  height: auto;
+}
+
 .hero-text-main {
   font-size: 48px;
   font-weight: var(--extra-bold-weight);
   color: var(--off-white-color);
+  margin: 0;
+}
+
+.hero-text-secondary {
+  margin: 0.5em 0;
+}
+
+.hero button {
+  border: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  font-size: 1.0125em;
 }
 
 header .nav-links a,
