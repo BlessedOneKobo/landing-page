@@ -5,10 +5,18 @@
   --grey-color: #e5e7eb;
   --off-white-color: #f9faf8;
   --light-weight: 300;
+  --page-padding: 1rem;
+}
+
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 header,
@@ -17,25 +25,37 @@ footer {
   background-color: var(--dark-color);
 }
 
-.hero-text-main {
-  font-size: 48px;
-  font-weight: var(--extra-bold-weight);
+header {
+  display: flex;
+  padding: var(--page-padding) 10rem;
+}
+
+header .logo-text {
+  font-size: 24px;
   color: var(--off-white-color);
+  flex: 1;
+}
+
+header .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
 }
 
 header .nav-links a {
   text-decoration: none;
 }
 
+.hero-text-main {
+  font-size: 48px;
+  font-weight: var(--extra-bold-weight);
+  color: var(--off-white-color);
+}
+
 header .nav-links a,
 .hero-text-secondary {
   font-size: 18px;
   color: var(--grey-color);
-}
-
-header .logo-text {
-  font-size: 24px;
-  color: var(--off-white-color);
 }
 
 .hero button,
