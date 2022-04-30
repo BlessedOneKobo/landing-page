@@ -151,6 +151,14 @@ header .nav-links a,
 
 .quote {
   background-color: var(--grey-color);
+  padding: 5rem var(--page-padding);
+}
+
+.quote figure {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .quote blockquote {
@@ -158,6 +166,14 @@ header .nav-links a,
   font-weight: var(--light-weight);
   font-style: italic;
   color: var(--dark-color);
+  align-self: center;
+  margin: 0;
+}
+
+.quote figcaption {
+  align-self: flex-end;
+  font-weight: bold;
+  font-size: 1.25em;
 }
 
 footer {
