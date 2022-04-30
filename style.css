@@ -217,4 +217,12 @@ header .nav-links a,
 
 footer {
   color: var(--off-white-color);
+  padding: 2rem var(--page-padding);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span {
+  opacity: 0.75;
 }
